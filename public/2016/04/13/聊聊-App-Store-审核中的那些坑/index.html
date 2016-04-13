@@ -1,0 +1,651 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="App Store,iOS," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="&amp;#x5BF9;&amp;#x4E8E;iOS&amp;#x7684;&amp;#x5F00;&amp;#x53D1;&amp;#x8005;&amp;#x6765;&amp;#x8BF4;&amp;#xFF0C;&amp;#x60F3;&amp;#x8981;&amp;#x987A;&amp;#x5229;&amp;#x7684;&amp;#x4E0A;&amp;#x67B6; App Store&amp;#xFF0C;&amp;#x5E76;&amp;#x4E0D;&amp;#x662F;&amp;#x628A;&amp;#x7A0B;&amp;#x5E8F;&amp;#x">
+<meta property="og:type" content="article">
+<meta property="og:title" content="聊聊 App Store 审核中的那些坑">
+<meta property="og:url" content="http://yoursite.com/2016/04/13/聊聊-App-Store-审核中的那些坑/index.html">
+<meta property="og:site_name" content="Tolecen">
+<meta property="og:description" content="&amp;#x5BF9;&amp;#x4E8E;iOS&amp;#x7684;&amp;#x5F00;&amp;#x53D1;&amp;#x8005;&amp;#x6765;&amp;#x8BF4;&amp;#xFF0C;&amp;#x60F3;&amp;#x8981;&amp;#x987A;&amp;#x5229;&amp;#x7684;&amp;#x4E0A;&amp;#x67B6; App Store&amp;#xFF0C;&amp;#x5E76;&amp;#x4E0D;&amp;#x662F;&amp;#x628A;&amp;#x7A0B;&amp;#x5E8F;&amp;#x">
+<meta property="og:image" content="http://yoursite.com/2016/04/13/聊聊-App-Store-审核中的那些坑/7D44733B-EC82-44D7-9EFE-D6D2B94FCD9C.png">
+<meta property="og:updated_time" content="2016-04-13T03:36:10.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="聊聊 App Store 审核中的那些坑">
+<meta name="twitter:description" content="&amp;#x5BF9;&amp;#x4E8E;iOS&amp;#x7684;&amp;#x5F00;&amp;#x53D1;&amp;#x8005;&amp;#x6765;&amp;#x8BF4;&amp;#xFF0C;&amp;#x60F3;&amp;#x8981;&amp;#x987A;&amp;#x5229;&amp;#x7684;&amp;#x4E0A;&amp;#x67B6; App Store&amp;#xFF0C;&amp;#x5E76;&amp;#x4E0D;&amp;#x662F;&amp;#x628A;&amp;#x7A0B;&amp;#x5E8F;&amp;#x">
+<meta name="twitter:image" content="http://yoursite.com/2016/04/13/聊聊-App-Store-审核中的那些坑/7D44733B-EC82-44D7-9EFE-D6D2B94FCD9C.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 聊聊 App Store 审核中的那些坑 | Tolecen </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Tolecen</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Tolecen</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                聊聊 App Store 审核中的那些坑
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-13T11:30:27+08:00" content="2016-04-13">
+              2016-04-13
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/iOS开发/" itemprop="url" rel="index">
+                    <span itemprop="name">iOS开发</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>&#x5BF9;&#x4E8E;iOS&#x7684;&#x5F00;&#x53D1;&#x8005;&#x6765;&#x8BF4;&#xFF0C;&#x60F3;&#x8981;&#x987A;&#x5229;&#x7684;&#x4E0A;&#x67B6; App Store&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x628A;&#x7A0B;&#x5E8F;&#x505A;&#x51FA;&#x6765;&#x6CA1;&#x6709;bug&#x5C31;&#x5B8C;&#x4E8B;&#x4E86;&#xFF0C;&#x8FD8;&#x8981;&#x65F6;&#x65F6;&#x523B;&#x523B;&#x8BB0;&#x7740;&#x5E94;&#x5BF9; App Store &#x5404;&#x79CD;&#x5947;&#x8469;&#x7684;&#x5BA1;&#x6838;&#x4EBA;&#x5458;&#x3002;&#x4E0B;&#x9762;&#xFF0C;&#x6162;&#x6162;&#x6765;&#x68B3;&#x7406;&#x4E00;&#x4E0B;&#x6211;&#x66FE;&#x7ECF;&#x9047;&#x5230;&#x8FC7;&#x7684;&#x90A3;&#x4E9B;&#x5751;&#xFF0C;&#x4E5F;&#x4E3A;&#x5176;&#x4ED6;&#x7ECF;&#x9A8C;&#x5C1A;&#x6D45;&#x7684;&#x7AE5;&#x978B;&#x4EEC;&#x63D0;&#x4F9B;&#x4E00;&#x4E9B;&#x7ECF;&#x9A8C;&#x3002;&#x4E0B;&#x9762;&#x8BF4;&#x7684;&#x5927;&#x90E8;&#x5206;&#x5E94;&#x8BE5;&#x662F; App Store &#x5BA1;&#x6838;&#x89C4;&#x5219;&#x91CC;&#x8BF4;&#x660E;&#x8FC7;&#x7684;&#x4E00;&#x4E9B;&#x6761;&#x6B3E;&#xFF0C;&#x6709;&#x51E0;&#x4E2A;&#x662F;&#x56E0;&#x4E3A;&#x5BA1;&#x6838;&#x4EBA;&#x5458;&#x5947;&#x8469;&#x3002;</p>
+<p><img src="/2016/04/13/&#x804A;&#x804A;-App-Store-&#x5BA1;&#x6838;&#x4E2D;&#x7684;&#x90A3;&#x4E9B;&#x5751;/7D44733B-EC82-44D7-9EFE-D6D2B94FCD9C.png" alt=""></p>
+<a id="more"></a>
+<p>&#x5BF9;&#x4E8E;iOS&#x7684;&#x5F00;&#x53D1;&#x8005;&#x6765;&#x8BF4;&#xFF0C;&#x60F3;&#x8981;&#x987A;&#x5229;&#x7684;&#x4E0A;&#x67B6; App Store&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x628A;&#x7A0B;&#x5E8F;&#x505A;&#x51FA;&#x6765;&#x6CA1;&#x6709;bug&#x5C31;&#x5B8C;&#x4E8B;&#x4E86;&#xFF0C;&#x8FD8;&#x8981;&#x65F6;&#x65F6;&#x523B;&#x523B;&#x8BB0;&#x7740;&#x5E94;&#x5BF9; App Store &#x5404;&#x79CD;&#x5947;&#x8469;&#x7684;&#x5BA1;&#x6838;&#x4EBA;&#x5458;&#x3002;&#x4E0B;&#x9762;&#xFF0C;&#x6162;&#x6162;&#x6765;&#x68B3;&#x7406;&#x4E00;&#x4E0B;&#x6211;&#x66FE;&#x7ECF;&#x9047;&#x5230;&#x8FC7;&#x7684;&#x90A3;&#x4E9B;&#x5751;&#xFF0C;&#x4E5F;&#x4E3A;&#x5176;&#x4ED6;&#x7ECF;&#x9A8C;&#x5C1A;&#x6D45;&#x7684;&#x7AE5;&#x978B;&#x4EEC;&#x63D0;&#x4F9B;&#x4E00;&#x4E9B;&#x7ECF;&#x9A8C;&#x3002;&#x4E0B;&#x9762;&#x8BF4;&#x7684;&#x5927;&#x90E8;&#x5206;&#x5E94;&#x8BE5;&#x662F; App Store &#x5BA1;&#x6838;&#x89C4;&#x5219;&#x91CC;&#x8BF4;&#x660E;&#x8FC7;&#x7684;&#x4E00;&#x4E9B;&#x6761;&#x6B3E;&#xFF0C;&#x6709;&#x51E0;&#x4E2A;&#x662F;&#x56E0;&#x4E3A;&#x5BA1;&#x6838;&#x4EBA;&#x5458;&#x5947;&#x8469;&#x3002;</p>
+<p>##&#x767B;&#x5F55;&#x9875;&#x9762;&#x7F3A;&#x5C11;&#x7528;&#x6237;&#x534F;&#x8BAE;&#xFF08;&#x9690;&#x79C1;&#x653F;&#x7B56;&#xFF09;&#xFF0C;&#x6216;&#x8005; itunes connect &#x91CC;&#x7F3A;&#x5C11;&#x7528;&#x6237;&#x534F;&#x8BAE;&#xFF08;&#x9690;&#x79C1;&#x653F;&#x7B56;&#xFF09;&#x3002;<br>&#x53EA;&#x8981;&#x662F;&#x5177;&#x5907;&#x767B;&#x5F55;&#x529F;&#x80FD;&#x7684;App&#xFF0C;&#x4E00;&#x5B9A;&#x4E0D;&#x80FD;&#x7F3A;&#x5C11;&#x7528;&#x6237;&#x534F;&#x8BAE;&#xFF08;&#x9690;&#x79C1;&#x653F;&#x7B56;&#xFF09;&#xFF0C;&#x5C31;&#x662F;&#x8BA9;&#x7528;&#x6237;&#x5DF4;&#x62C9;&#x5DF4;&#x62C9;&#x4E00;&#x987F;&#x770B;&#x7684;&#x90A3;&#x4E00;&#x5927;&#x7247;&#x6587;&#x5B57;&#x6027;&#x7684;&#x534F;&#x8BAE;&#x3002;</p>
+<h2 id="&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x767B;&#x5F55;&#x529F;&#x80FD;&#x63D0;&#x793A;&#x6B64;&#x7B2C;&#x4E09;&#x65B9;&#x7A0B;&#x5E8F;&#x672A;&#x5B89;&#x88C5;&#xFF0C;&#x4EE5;&#x53CA;&#x53EA;&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x767B;&#x5F55;&#x3002;"><a href="#&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x767B;&#x5F55;&#x529F;&#x80FD;&#x63D0;&#x793A;&#x6B64;&#x7B2C;&#x4E09;&#x65B9;&#x7A0B;&#x5E8F;&#x672A;&#x5B89;&#x88C5;&#xFF0C;&#x4EE5;&#x53CA;&#x53EA;&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x767B;&#x5F55;&#x3002;" class="headerlink" title="&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x767B;&#x5F55;&#x529F;&#x80FD;&#x63D0;&#x793A;&#x6B64;&#x7B2C;&#x4E09;&#x65B9;&#x7A0B;&#x5E8F;&#x672A;&#x5B89;&#x88C5;&#xFF0C;&#x4EE5;&#x53CA;&#x53EA;&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x767B;&#x5F55;&#x3002;"></a>&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x767B;&#x5F55;&#x529F;&#x80FD;&#x63D0;&#x793A;&#x6B64;&#x7B2C;&#x4E09;&#x65B9;&#x7A0B;&#x5E8F;&#x672A;&#x5B89;&#x88C5;&#xFF0C;&#x4EE5;&#x53CA;&#x53EA;&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x767B;&#x5F55;&#x3002;</h2><p>&#x5F88;&#x591A;&#x5F00;&#x53D1;&#x8005;&#x4E3A;&#x4E86;&#x6EE1;&#x8DB3;&#x5FEB;&#x6377;&#x767B;&#x9646;&#xFF0C;&#x4F1A;&#x52A0;&#x5165;&#x8B6C;&#x5982;&#x5FAE;&#x4FE1;&#x767B;&#x5F55;&#x3001;&#x5FAE;&#x535A;&#x767B;&#x5F55;&#x4E4B;&#x7C7B;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x767B;&#x5F55;&#xFF0C;&#x6709;&#x4E9B;&#x4EBA;&#x53C8;&#x4E3A;&#x4E86;&#x4F53;&#x9A8C;&#xFF0C;&#x5F53;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x67D0;&#x4E2A;&#x672A;&#x5B89;&#x88C5;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x7A0B;&#x5E8F;&#x65F6;&#xFF0C;&#x53BB;&#x63D0;&#x793A;&#x5B89;&#x88C5;&#xFF0C;&#x8FD9;&#x662F;&#x4E07;&#x4E07;&#x4E0D;&#x80FD;&#x7684;&#x3002;&#x6700;&#x4FDD;&#x9669;&#x7684;&#x505A;&#x6CD5;&#x5C31;&#x662F;&#x5148;&#x68C0;&#x6D4B;&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6B64;&#x7A0B;&#x5E8F;&#xFF0C;&#x672A;&#x5B89;&#x88C5;&#x5219;&#x9690;&#x85CF;&#x6B64;&#x7A0B;&#x5E8F;&#x7684;&#x56FE;&#x6807;&#x3002;&#x8FD8;&#x6709;&#x4E9B;&#x5F00;&#x53D1;&#x8005;&#x4E3A;&#x4E86;&#x7701;&#x65F6;&#xFF0C;&#x6682;&#x65F6;&#x4E0D;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x7684;&#x8D26;&#x53F7;&#x4F53;&#x7CFB;&#xFF0C;&#x53EA;&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x7684;&#xFF0C;&#x4F46;&#x8FD9;&#x4E5F;&#x662F;&#x82F9;&#x679C;&#x4E0D;&#x5141;&#x8BB8;&#x7684;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x8D26;&#x53F7;&#x767B;&#x5F55;&#x7CFB;&#x7EDF;&#xFF08;&#x6216;&#x8005;&#x4EC5;&#x4EC5;&#x662F;&#x4E00;&#x4E2A;&#x5047;&#x7684;&#x767B;&#x5F55;UI&#xFF09;&#x3002;</p>
+<h2 id="UI&#x592A;&#x4E11;&#xFF0C;&#x4E0D;&#x7B26;&#x5408;iOS&#x8BBE;&#x8BA1;&#x89C4;&#x8303;&#x3002;"><a href="#UI&#x592A;&#x4E11;&#xFF0C;&#x4E0D;&#x7B26;&#x5408;iOS&#x8BBE;&#x8BA1;&#x89C4;&#x8303;&#x3002;" class="headerlink" title="UI&#x592A;&#x4E11;&#xFF0C;&#x4E0D;&#x7B26;&#x5408;iOS&#x8BBE;&#x8BA1;&#x89C4;&#x8303;&#x3002;"></a>UI&#x592A;&#x4E11;&#xFF0C;&#x4E0D;&#x7B26;&#x5408;iOS&#x8BBE;&#x8BA1;&#x89C4;&#x8303;&#x3002;</h2><p>&#x8FD9;&#x4E2A;&#x88AB;&#x62D2;&#x5C31;&#x53EA;&#x80FD;&#x8BF4;&#x786E;&#x5B9E;&#x592A;&#x4E11;&#x4E86;&#xFF0C;&#x82F9;&#x679C;&#x4E0D;&#x5FCD;&#x5FC3;&#x8BA9;&#x4F60;&#x7684;App&#x53BB;&#x6076;&#x5FC3;&#x4EBA;&#x3002;</p>
+<h2 id="&#x9875;&#x9762;&#x6CA1;&#x6709;&#x6570;&#x636E;&#x65F6;&#x7A7A;&#x767D;&#x3002;"><a href="#&#x9875;&#x9762;&#x6CA1;&#x6709;&#x6570;&#x636E;&#x65F6;&#x7A7A;&#x767D;&#x3002;" class="headerlink" title="&#x9875;&#x9762;&#x6CA1;&#x6709;&#x6570;&#x636E;&#x65F6;&#x7A7A;&#x767D;&#x3002;"></a>&#x9875;&#x9762;&#x6CA1;&#x6709;&#x6570;&#x636E;&#x65F6;&#x7A7A;&#x767D;&#x3002;</h2><p>&#x5F88;&#x591A;&#x5C0F;&#x56E2;&#x961F;&#x6216;&#x5C0F;&#x516C;&#x53F8;&#x5728;App&#x8BBE;&#x8BA1;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x6CE8;&#x610F;&#x65E0;&#x6570;&#x636E;&#x65F6;&#x5019;UI&#x7684;&#x8BBE;&#x8BA1;&#xFF0C;&#x5C31;&#x4F1A;&#x51FA;&#x73B0;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6570;&#x636E;&#x9875;&#x9762;&#x7A7A;&#x767D;&#x7684;&#x73B0;&#x8C61;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x505A;&#x597D;&#x7A7A;&#x767D;&#x9875;&#x65E0;&#x6570;&#x636E;&#x7684;&#x63D0;&#x793A;&#x3002;</p>
+<h2 id="&#x5D4C;&#x5165;&#x4E86;&#x67D0;&#x4E9B;&#x4F7F;&#x7528;IDFA&#x7684;SDK&#x800C;&#x4E0E;&#x5E7F;&#x544A;&#x65E0;&#x5173;&#x3002;"><a href="#&#x5D4C;&#x5165;&#x4E86;&#x67D0;&#x4E9B;&#x4F7F;&#x7528;IDFA&#x7684;SDK&#x800C;&#x4E0E;&#x5E7F;&#x544A;&#x65E0;&#x5173;&#x3002;" class="headerlink" title="&#x5D4C;&#x5165;&#x4E86;&#x67D0;&#x4E9B;&#x4F7F;&#x7528;IDFA&#x7684;SDK&#x800C;&#x4E0E;&#x5E7F;&#x544A;&#x65E0;&#x5173;&#x3002;"></a>&#x5D4C;&#x5165;&#x4E86;&#x67D0;&#x4E9B;&#x4F7F;&#x7528;IDFA&#x7684;SDK&#x800C;&#x4E0E;&#x5E7F;&#x544A;&#x65E0;&#x5173;&#x3002;</h2><p>&#x5F88;&#x591A;&#x5F00;&#x53D1;&#x8005;&#x4F1A;&#x5728;&#x7A0B;&#x5E8F;&#x91CC;&#x5D4C;&#x5165;&#x53CB;&#x76DF;&#x3001;ShareSDK&#x7B49;&#x7B2C;&#x4E09;&#x65B9;&#x7684;SDK&#xFF0C;&#x65B9;&#x4FBF;&#x5FEB;&#x6377;&#xFF0C;&#x4F46;&#x662F;&#x5374;&#x5FFD;&#x89C6;&#x4E86;&#x82F9;&#x679C;IDFA&#x4E00;&#x5B9A;&#x8981;&#x548C;&#x5E7F;&#x544A;&#x6709;&#x5173;&#x7684;&#x89C4;&#x5B9A;&#x3002;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x662F;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x9875;&#x9762;&#x5D4C;&#x5165;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;&#x4E8E;banner&#x7684;&#x4F2A;&#x5E7F;&#x544A;&#xFF0C;&#x6216;&#x8005;&#x5728;&#x65B0;&#x7248;&#x672C;&#x63D0;&#x4EA4;&#x5BA1;&#x6838;&#x65F6;&#x9009;&#x62E9;&#x662F;&#x56E0;&#x4E3A;&#x5728;&#x5176;&#x4ED6;&#x5730;&#x65B9;&#x505A;App&#x63A8;&#x5E7F;&#x800C;&#x4F7F;&#x7528;IDFA&#x505A;&#x8BC6;&#x522B;&#x3002;</p>
+<h2 id="&#x542B;&#x6709;&#x67D0;&#x4E9B;&#x5BA1;&#x6838;&#x4EBA;&#x5458;&#x4E0D;&#x61C2;&#x7684;&#x8BCD;&#xFF08;&#x8FD9;&#x4E2A;&#x6BD4;&#x8F83;&#x86CB;&#x75BC;&#xFF09;&#x3002;"><a href="#&#x542B;&#x6709;&#x67D0;&#x4E9B;&#x5BA1;&#x6838;&#x4EBA;&#x5458;&#x4E0D;&#x61C2;&#x7684;&#x8BCD;&#xFF08;&#x8FD9;&#x4E2A;&#x6BD4;&#x8F83;&#x86CB;&#x75BC;&#xFF09;&#x3002;" class="headerlink" title="&#x542B;&#x6709;&#x67D0;&#x4E9B;&#x5BA1;&#x6838;&#x4EBA;&#x5458;&#x4E0D;&#x61C2;&#x7684;&#x8BCD;&#xFF08;&#x8FD9;&#x4E2A;&#x6BD4;&#x8F83;&#x86CB;&#x75BC;&#xFF09;&#x3002;"></a>&#x542B;&#x6709;&#x67D0;&#x4E9B;&#x5BA1;&#x6838;&#x4EBA;&#x5458;&#x4E0D;&#x61C2;&#x7684;&#x8BCD;&#xFF08;&#x8FD9;&#x4E2A;&#x6BD4;&#x8F83;&#x86CB;&#x75BC;&#xFF09;&#x3002;</h2><p>&#x66FE;&#x7ECF;&#x6211;&#x4EEC;&#x505A;&#x4E86;&#x4E2A;&#x6D3B;&#x52A8;&#x53EB;&#x72AF;&#x4E8C;&#x548C;&#x5410;&#x69FD;&#x65E0;&#x8282;&#x64CD;&#xFF0C;&#x5BA1;&#x6838;&#x4EBA;&#x5458;&#x975E;&#x8BF4;&#x8FD9;&#x8BCD;&#x4E0D;&#x5065;&#x5EB7;&#xFF0C;&#x786C;&#x903C;&#x7740;&#x6211;&#x4EEC;&#x6362;&#x8BCD;&#x3002;&#x3002;&#x3002;</p>
+<h2 id="&#x7A0B;&#x5E8F;&#x5185;&#x505A;&#x4E86;&#x67D0;&#x4E9B;&#x6D3B;&#x52A8;&#x6709;&#x7C7B;&#x4F3C;&#x62BD;&#x5956;&#xFF08;&#x4E5F;&#x6BD4;&#x8F83;&#x86CB;&#x75BC;&#xFF09;"><a href="#&#x7A0B;&#x5E8F;&#x5185;&#x505A;&#x4E86;&#x67D0;&#x4E9B;&#x6D3B;&#x52A8;&#x6709;&#x7C7B;&#x4F3C;&#x62BD;&#x5956;&#xFF08;&#x4E5F;&#x6BD4;&#x8F83;&#x86CB;&#x75BC;&#xFF09;" class="headerlink" title="&#x7A0B;&#x5E8F;&#x5185;&#x505A;&#x4E86;&#x67D0;&#x4E9B;&#x6D3B;&#x52A8;&#x6709;&#x7C7B;&#x4F3C;&#x62BD;&#x5956;&#xFF08;&#x4E5F;&#x6BD4;&#x8F83;&#x86CB;&#x75BC;&#xFF09;"></a>&#x7A0B;&#x5E8F;&#x5185;&#x505A;&#x4E86;&#x67D0;&#x4E9B;&#x6D3B;&#x52A8;&#x6709;&#x7C7B;&#x4F3C;&#x62BD;&#x5956;&#xFF08;&#x4E5F;&#x6BD4;&#x8F83;&#x86CB;&#x75BC;&#xFF09;</h2><p>&#x5728;App&#x91CC;&#x505A;&#x548C;&#x62BD;&#x5956;&#x76F8;&#x5173;&#x7684;&#x6D3B;&#x52A8;&#x63D0;&#x4EA4;&#x5BA1;&#x6838;&#x65F6;&#xFF0C;&#x8981;&#x5728; itunes connect &#x91CC;&#x7684;&#x5206;&#x7EA7;&#x91CC;&#x6807;&#x6CE8;&#x4E0A;&#x865A;&#x62DF;&#x8D4C;&#x535A;&#xFF0C;&#x8981;&#x4E0D;&#x7136;&#x4ED6;&#x5C31;&#x786C;&#x8BF4;&#x8FD9;&#x5C5E;&#x4E8E;&#x8D4C;&#x535A;&#x3002;</p>
+<h2 id="&#x505A;&#x6D3B;&#x52A8;&#x6216;&#x9001;&#x5956;&#x54C1;&#x672A;&#x6807;&#x660E;&#x4E0E;&#x82F9;&#x679C;&#x516C;&#x53F8;&#x65E0;&#x5173;&#xFF0C;&#x751A;&#x81F3;&#x62FF;iPhone&#x7B49;&#x82F9;&#x679C;&#x4EA7;&#x54C1;&#x505A;&#x5956;&#x54C1;&#x3002;"><a href="#&#x505A;&#x6D3B;&#x52A8;&#x6216;&#x9001;&#x5956;&#x54C1;&#x672A;&#x6807;&#x660E;&#x4E0E;&#x82F9;&#x679C;&#x516C;&#x53F8;&#x65E0;&#x5173;&#xFF0C;&#x751A;&#x81F3;&#x62FF;iPhone&#x7B49;&#x82F9;&#x679C;&#x4EA7;&#x54C1;&#x505A;&#x5956;&#x54C1;&#x3002;" class="headerlink" title="&#x505A;&#x6D3B;&#x52A8;&#x6216;&#x9001;&#x5956;&#x54C1;&#x672A;&#x6807;&#x660E;&#x4E0E;&#x82F9;&#x679C;&#x516C;&#x53F8;&#x65E0;&#x5173;&#xFF0C;&#x751A;&#x81F3;&#x62FF;iPhone&#x7B49;&#x82F9;&#x679C;&#x4EA7;&#x54C1;&#x505A;&#x5956;&#x54C1;&#x3002;"></a>&#x505A;&#x6D3B;&#x52A8;&#x6216;&#x9001;&#x5956;&#x54C1;&#x672A;&#x6807;&#x660E;&#x4E0E;&#x82F9;&#x679C;&#x516C;&#x53F8;&#x65E0;&#x5173;&#xFF0C;&#x751A;&#x81F3;&#x62FF;iPhone&#x7B49;&#x82F9;&#x679C;&#x4EA7;&#x54C1;&#x505A;&#x5956;&#x54C1;&#x3002;</h2><p>&#x8981;&#x5728;App&#x91CC;&#x505A;&#x6D3B;&#x52A8;&#xFF0C;&#x6216;&#x9001;&#x5956;&#x54C1;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x5728;&#x8BF4;&#x660E;&#x91CC;&#x6807;&#x660E;&#x672C;&#x6D3B;&#x52A8;&#x53CA;&#x5956;&#x54C1;&#x4E0E;&#x82F9;&#x679C;&#x516C;&#x53F8;&#x65E0;&#x5173;&#x3002;&#x8FD8;&#x6709;&#xFF0C;&#x4E0D;&#x80FD;&#x62FF;&#x82F9;&#x679C;&#x7684;&#x4EFB;&#x4F55;&#x4EA7;&#x54C1;&#x505A;&#x5956;&#x54C1;&#xFF01;</p>
+<h2 id="UGC&#x4EA7;&#x54C1;&#x6CA1;&#x6709;&#x7528;&#x6237;&#x4E3E;&#x62A5;&#x529F;&#x80FD;&#x3002;"><a href="#UGC&#x4EA7;&#x54C1;&#x6CA1;&#x6709;&#x7528;&#x6237;&#x4E3E;&#x62A5;&#x529F;&#x80FD;&#x3002;" class="headerlink" title="UGC&#x4EA7;&#x54C1;&#x6CA1;&#x6709;&#x7528;&#x6237;&#x4E3E;&#x62A5;&#x529F;&#x80FD;&#x3002;"></a>UGC&#x4EA7;&#x54C1;&#x6CA1;&#x6709;&#x7528;&#x6237;&#x4E3E;&#x62A5;&#x529F;&#x80FD;&#x3002;</h2><p>&#x6709;&#x7528;&#x6237;&#x4EA7;&#x751F;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x6709;&#x4E3E;&#x62A5;&#x529F;&#x80FD;&#xFF0C;&#x54EA;&#x6015;&#x5C31;&#x52A0;&#x4E00;&#x4E2A;&#x4E3E;&#x62A5;&#x6309;&#x94AE;&#x3002;</p>
+<h2 id="&#x7A0B;&#x5E8F;&#x5185;&#x6709;&#x76D1;&#x6D4B;&#x7248;&#x672C;&#x66F4;&#x65B0;&#x3002;"><a href="#&#x7A0B;&#x5E8F;&#x5185;&#x6709;&#x76D1;&#x6D4B;&#x7248;&#x672C;&#x66F4;&#x65B0;&#x3002;" class="headerlink" title="&#x7A0B;&#x5E8F;&#x5185;&#x6709;&#x76D1;&#x6D4B;&#x7248;&#x672C;&#x66F4;&#x65B0;&#x3002;"></a>&#x7A0B;&#x5E8F;&#x5185;&#x6709;&#x76D1;&#x6D4B;&#x7248;&#x672C;&#x66F4;&#x65B0;&#x3002;</h2><p>&#x8FD9;&#x4E2A;&#x4E5F;&#x662F;&#x8FD1;&#x51E0;&#x4E2A;&#x6708;&#x51FA;&#x6765;&#x7684;&#x65B0;&#x89C4;&#x5219;&#xFF0C;&#x7A0B;&#x5E8F;&#x5185;&#x4E0D;&#x80FD;&#x542B;&#x6709;&#x7248;&#x672C;&#x68C0;&#x6D4B;&#x529F;&#x80FD;&#x3002;</p>
+<h2 id="&#x7A0B;&#x5E8F;&#x5B89;&#x88C5;&#x4E4B;&#x540E;&#x548C;-itunes-connect-&#x91CC;&#x4E0A;&#x4F20;&#x7684;&#x7B80;&#x4ECB;&#x56FE;&#xFF08;&#x6216;&#x56FE;&#x6807;&#xFF09;&#x4E0D;&#x4E00;&#x81F4;&#x3002;"><a href="#&#x7A0B;&#x5E8F;&#x5B89;&#x88C5;&#x4E4B;&#x540E;&#x548C;-itunes-connect-&#x91CC;&#x4E0A;&#x4F20;&#x7684;&#x7B80;&#x4ECB;&#x56FE;&#xFF08;&#x6216;&#x56FE;&#x6807;&#xFF09;&#x4E0D;&#x4E00;&#x81F4;&#x3002;" class="headerlink" title="&#x7A0B;&#x5E8F;&#x5B89;&#x88C5;&#x4E4B;&#x540E;&#x548C; itunes connect &#x91CC;&#x4E0A;&#x4F20;&#x7684;&#x7B80;&#x4ECB;&#x56FE;&#xFF08;&#x6216;&#x56FE;&#x6807;&#xFF09;&#x4E0D;&#x4E00;&#x81F4;&#x3002;"></a>&#x7A0B;&#x5E8F;&#x5B89;&#x88C5;&#x4E4B;&#x540E;&#x548C; itunes connect &#x91CC;&#x4E0A;&#x4F20;&#x7684;&#x7B80;&#x4ECB;&#x56FE;&#xFF08;&#x6216;&#x56FE;&#x6807;&#xFF09;&#x4E0D;&#x4E00;&#x81F4;&#x3002;</h2><p>&#x8FD9;&#x660E;&#x663E;&#x5C31;&#x662F;&#x6B3A;&#x9A97;&#x82F9;&#x679C;&#x6B3A;&#x9A97;&#x7528;&#x6237;&#x4E86;&#xFF0C;&#x7ED9;&#x4F60;&#x8FC7;&#x624D;&#x602A;&#x3002;</p>
+<h2 id="&#x5E94;&#x7528;&#x540D;&#x79F0;&#x542B;&#x6709;&#x5176;&#x4ED6;&#x5E94;&#x7528;&#x540D;&#x5B57;&#x3002;"><a href="#&#x5E94;&#x7528;&#x540D;&#x79F0;&#x542B;&#x6709;&#x5176;&#x4ED6;&#x5E94;&#x7528;&#x540D;&#x5B57;&#x3002;" class="headerlink" title="&#x5E94;&#x7528;&#x540D;&#x79F0;&#x542B;&#x6709;&#x5176;&#x4ED6;&#x5E94;&#x7528;&#x540D;&#x5B57;&#x3002;"></a>&#x5E94;&#x7528;&#x540D;&#x79F0;&#x542B;&#x6709;&#x5176;&#x4ED6;&#x5E94;&#x7528;&#x540D;&#x5B57;&#x3002;</h2><p>&#x6709;&#x4E9B;&#x4EBA;&#x4E3A;&#x4E86;&#x63D0;&#x9AD8;&#x7D22;&#x5F15;&#x5EA6;&#xFF0C;&#x5728; itunes connect &#x7684;&#x540D;&#x5B57;&#x91CC;&#x5199;&#x5165;&#x5176;&#x4ED6;&#x77E5;&#x540D;&#x5E94;&#x7528;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x8FD9;&#x80AF;&#x5B9A;&#x4E0D;&#x4F1A;&#x901A;&#x8FC7;&#x3002;</p>
+<h2 id="&#x51FA;&#x73B0;&#x4E86;&#x5176;&#x4ED6;&#x624B;&#x673A;&#x6216;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3002;"><a href="#&#x51FA;&#x73B0;&#x4E86;&#x5176;&#x4ED6;&#x624B;&#x673A;&#x6216;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3002;" class="headerlink" title="&#x51FA;&#x73B0;&#x4E86;&#x5176;&#x4ED6;&#x624B;&#x673A;&#x6216;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3002;"></a>&#x51FA;&#x73B0;&#x4E86;&#x5176;&#x4ED6;&#x624B;&#x673A;&#x6216;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x3002;</h2><p>&#x4E0D;&#x8981;&#x5728;&#x5BA1;&#x6838;&#x65F6;&#x8BA9;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x51FA;&#x73B0;&#x4EFB;&#x4F55;&#x7C7B;&#x4F3C;&#x4E8E;&#x5B89;&#x5353;&#x5E73;&#x53F0;&#x540C;&#x6B65;&#x4E0A;&#x67B6;&#x7B49;&#x7B49;&#xFF0C;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x624B;&#x673A;&#x548C;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x540D;&#x79F0;&#x90FD;&#x4E0D;&#x5141;&#x8BB8;&#x51FA;&#x73B0;&#x3002;</p>
+<h2 id="&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x652F;&#x4ED8;&#x3002;"><a href="#&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x652F;&#x4ED8;&#x3002;" class="headerlink" title="&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x652F;&#x4ED8;&#x3002;"></a>&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x652F;&#x4ED8;&#x3002;</h2><p>&#x82F9;&#x679C;&#x5B98;&#x65B9;&#x53EA;&#x8BA4;&#x82F9;&#x679C;&#x652F;&#x4ED8;&#xFF0C;&#x5176;&#x4ED6;&#x652F;&#x4ED8;&#x53EA;&#x80FD;&#x901A;&#x8FC7;web&#x5F62;&#x5F0F;&#x8C03;&#x53D6;&#x9875;&#x9762;&#x5B8C;&#x6210;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x53EF;&#x4EE5;&#x6B3A;&#x9A97;&#xFF0C;&#x4F60;&#x61C2;&#x5F97;&#x3002;</p>
+<p>&#x6682;&#x65F6;&#x60F3;&#x5230;&#x8FD9;&#x4E48;&#x591A;&#xFF0C;&#x4EE5;&#x540E;&#x518D;&#x8BB0;&#x8D77;&#x6765;&#x7EE7;&#x7EED;&#x66F4;&#x65B0;&#xFF0C;&#x5F53;&#x7136;&#xFF0C;&#x88AB;&#x62D2;&#x4E5F;&#x4E0D;&#x4E00;&#x5B9A;&#x975E;&#x5F97;&#x91CD;&#x65B0;&#x63D0;&#x4EA4;&#xFF0C;&#x6709;&#x65F6;&#xFF0C;&#x4E00;&#x4E9B;&#x56E0;&#x4E3A;&#x4EBA;&#x4E3A;&#x56E0;&#x7D20;&#x9020;&#x6210;&#x7684;&#x88AB;&#x62D2;&#xFF08;&#x6BD4;&#x5982;&#x67D0;&#x4E9B;&#x8BCD;&#x8BED;&#x7684;&#x7406;&#x89E3;&#xFF0C;&#x4E00;&#x4E9B;&#x4E0D;&#x5BB9;&#x6613;&#x51FA;&#x73B0;&#x7684;&#x5C0F;bug&#xFF09;&#xFF0C;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7533;&#x8BC9;&#x6216;&#x8005;&#x76F4;&#x63A5;&#x5728;&#x5BA1;&#x6838;&#x88AB;&#x62D2;&#x7684;&#x9875;&#x9762;&#x56DE;&#x590D;&#x82F9;&#x679C;&#x5BA1;&#x6838;&#x4EBA;&#x5458;&#xFF0C;&#x8BF4;&#x660E;&#x60C5;&#x51B5;&#xFF0C;&#x5F88;&#x5927;&#x51E0;&#x7387;&#x662F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7684;&#x3002;</p>
+
+      
+    </div>
+    
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/App-Store/" rel="tag">#App Store</a>
+          
+            <a href="/tags/iOS/" rel="tag">#iOS</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/13/小技巧：Mac系统调整Launchpad图标大小/" rel="next" title="小技巧：Mac系统调整Launchpad图标大小">
+                <i class="fa fa-chevron-left"></i> 小技巧：Mac系统调整Launchpad图标大小
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="Tolecen" />
+          <p class="site-author-name" itemprop="name">Tolecen</p>
+          <p class="site-description motion-element" itemprop="description">One heart, One world</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/208000101/home?wvr=5" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/Tolecen" target="_blank" title="Github">
+                  
+                    <i class="fa fa-globe"></i>
+                  
+                  Github
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element">
+            <div class="links-of-blogroll-title">友情链接</div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://uzero.cn" title="优零科技" target="_blank">优零科技</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.sdut.edu.cn" title="山东理工大学" target="_blank">山东理工大学</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.youthol.cn/" title="青春在线" target="_blank">青春在线</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://rmingwang.com/" title="Rming" target="_blank">Rming</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://fleurer-lee.com/" title="Fleurer" target="_blank">Fleurer</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.mchengyu.com/proverb" title="天天成语" target="_blank">天天成语</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用第三方登录功能提示此第三方程序未安装，以及只使用第三方登录。"><span class="nav-number">1.</span> <span class="nav-text">使用第三方登录功能提示此第三方程序未安装，以及只使用第三方登录。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UI太丑，不符合iOS设计规范。"><span class="nav-number">2.</span> <span class="nav-text">UI太丑，不符合iOS设计规范。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#页面没有数据时空白。"><span class="nav-number">3.</span> <span class="nav-text">页面没有数据时空白。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#嵌入了某些使用IDFA的SDK而与广告无关。"><span class="nav-number">4.</span> <span class="nav-text">嵌入了某些使用IDFA的SDK而与广告无关。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#含有某些审核人员不懂的词（这个比较蛋疼）。"><span class="nav-number">5.</span> <span class="nav-text">含有某些审核人员不懂的词（这个比较蛋疼）。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#程序内做了某些活动有类似抽奖（也比较蛋疼）"><span class="nav-number">6.</span> <span class="nav-text">程序内做了某些活动有类似抽奖（也比较蛋疼）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#做活动或送奖品未标明与苹果公司无关，甚至拿iPhone等苹果产品做奖品。"><span class="nav-number">7.</span> <span class="nav-text">做活动或送奖品未标明与苹果公司无关，甚至拿iPhone等苹果产品做奖品。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UGC产品没有用户举报功能。"><span class="nav-number">8.</span> <span class="nav-text">UGC产品没有用户举报功能。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#程序内有监测版本更新。"><span class="nav-number">9.</span> <span class="nav-text">程序内有监测版本更新。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#程序安装之后和-itunes-connect-里上传的简介图（或图标）不一致。"><span class="nav-number">10.</span> <span class="nav-text">程序安装之后和 itunes connect 里上传的简介图（或图标）不一致。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应用名称含有其他应用名字。"><span class="nav-number">11.</span> <span class="nav-text">应用名称含有其他应用名字。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#出现了其他手机或操作系统。"><span class="nav-number">12.</span> <span class="nav-text">出现了其他手机或操作系统。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用其他支付。"><span class="nav-number">13.</span> <span class="nav-text">使用其他支付。</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tolecen</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>
