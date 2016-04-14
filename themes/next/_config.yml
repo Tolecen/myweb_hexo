@@ -27,9 +27,9 @@ rss:
 menu:
   home: /
   categories: /categories
-  #about: /about
   archives: /archives
-  tags: /tags
+  about: /about
+  #tags: /tags
   #commonweal: /404.html
 
 
