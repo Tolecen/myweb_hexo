@@ -140,12 +140,13 @@ social_icons:
 links_title: 友情链接
 links:
   优零科技: http://uzero.cn
-  山东理工大学: http://www.sdut.edu.cn
+  山东理工大学: http://www.sdut.edu.cn/
   青春在线: http://www.youthol.cn/
   Rming: http://rmingwang.com/
   Fleurer: http://fleurer-lee.com/
-  天天成语: http://www.mchengyu.com/proverb
+  天天成语: http://www.mchengyu.com/proverb/
   163博客: http://taox.l.blog.163.com
+  QRCode: http://uzero.cn/scancode/
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
